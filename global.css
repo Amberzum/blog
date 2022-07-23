@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 body {
+  display: flex;
   font-family: "Amatic SC", cursive;
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(246, 244, 231);
+  margin: 0;
 }
+
 img {
   display: block;
   margin: 0 auto 0 auto;
@@ -25,24 +26,61 @@ nav ul li {
   display: inline;
   list-style: none;
   align-items: center;
+  font-size: 40px;
   padding: 2px 5px 2px 5px;
-  border: 1px solid rgb(61, 71, 66);
-  border-radius: 5px;
-  margin: 5px;
 }
 
 nav ul {
   padding: 0;
   gap: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+header {
+  width: 200px;
+  background-color: rgb(223, 198, 135);
 }
 
 a {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: rgb(121, 84, 58) solid underline;
+}
+
 #currentTime {
   font-size: 32px;
   margin: 20px;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  header {
+    width: 100%;
+  }
 }
