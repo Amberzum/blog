@@ -1,9 +1,9 @@
-@font-face {
-  src: url("Pecita.otf");
-  font-family: Pecita;
-}
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+
 body {
   display: flex;
+  font-family: "Edu SA Beginner", sans-serif;
   font-size: 20px;
   background-color: rgb(246, 244, 231);
   margin: 0;
@@ -18,6 +18,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Amatic SC", cursive;
 }
 p {
   display: flex;
@@ -26,10 +27,8 @@ p {
 }
 nav ul li {
   display: inline;
-  list-style: none;
   align-items: center;
   font-size: 40px;
-  font-family: Pecita, cursive;
   padding: 2px 5px 2px 5px;
 }
 
@@ -39,6 +38,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Amatic SC", cursive;
 }
 
 header {
@@ -71,6 +71,29 @@ a:hover {
   width: 100%;
 }
 
+#about-content {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+
+#contact-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+#contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+#contact-list li {
+  width: 125px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -86,4 +109,9 @@ footer {
   header {
     width: 100%;
   }
+}
+
+li {
+  list-style: none;
+  text-align: left;
 }
